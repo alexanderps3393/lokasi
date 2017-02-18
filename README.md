@@ -1,6 +1,6 @@
-# Lokasi (en : Location)
+# Lokasi
 
-*Lokasi* is simple library to *get()* and *set()* position of element with structure "Object Pattern" and compatible with AMD or Common JS module. *Lokasi* can use without dependency like jQuery etc. and its will be return _position_ of object / element with initialize on *class* like ```html <div class="target"></div> ``` and will be return parent of element too.
+*Lokasi* is simple library to *get()* and *set()* position of element with structure "Object Pattern" and compatible with AMD or Common JS module. *Lokasi* can use without dependency like jQuery etc. and this library will be return _position_ of object / element with initialize on *class* like ```<div class="target"></div>``` and will be return parent of element too.
 
 #### Note : Don't forget to set parent position with _relative_ and result of position will be affect for their parent
 
@@ -8,9 +8,9 @@
 
 *Lokasi* just have two method inner class *Lokasi* :
 
-1. Method *_.get()_*
+### 1. Method _.get()_
 
-Use method *_.get()_* to get position and parent of object / element, this method will be return object like this :
+Use method _.get()_ to get position and parent of object / element, this method will be return object like this :
 
 ``` javascript 
 	
@@ -28,9 +28,9 @@ Use method *_.get()_* to get position and parent of object / element, this metho
 	*/
 ```
 
-2. Method *_.set()_*
+### 2. Method _.set()_
 
-Use method *_.set()_* to set position of object / element, this method have 3 parameters to use _(target, offset left, offset right)_ :
+Use method _.set()_ to set position of object / element, this method have 3 parameters to use _(target, offset left, offset right)_ :
 
 ``` javascript 
 	
