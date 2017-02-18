@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Get Coordinate</title>
+	<style type="text/css">
+		body {
+			padding: 30px;
+			text-align: center;
+		}
+		.wrapper-1, .wrapper-2 {
+			position: relative;
+			border: 1px solid #ABABAB;
+			padding: 40px;
+			width: 500px;
+		}
+		.target-1, .target-2, .target-3,
+		.target-4, .target-5, .target-6 {
+			position: absolute;
+			padding: 10px;
+			background-color: red;
+			border-radius: 50%;
+			top: 0;
+			left: 0;
+		}
+		.target-1 {
+			top: 20px;
+			left: 300px;
+		}
+		.target-2 {
+			top: 10px;
+			left: 230px;
+		}
+		.target-3 {
+			top: 18px;
+			left: 135px;
+		}
+		.target-4 {
+			top: 10px;
+			left: 48px;
+		}
+		.target-5 {
+			top: 30px;
+			left: 100px;
+		}
+		.target-6 {
+			top: 20px;
+			left: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="target-1"></div>
+	<div class="target-2"></div>
+	
+	<div class="wrapper-1">
+		<div class="target-3"></div>
+		<div class="target-4"></div>
+		
+		<div class="wrapper-2">
+			<div class="target-5"></div>
+			<div class="target-6"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="lokasi-object.js"></script>
+	<script type="text/javascript" src="lokasi-object.min.js"></script>
+	<script>
+		console.log(Lokasi.get('.target-1'));
+		console.log(Lokasi.get('.target-2'));
+		console.log(Lokasi.get('.target-3'));
+		console.log(Lokasi.get('.target-4'));
+		console.log(Lokasi.get('.target-5'));
+		console.log(Lokasi.get('.target-6'));
+
+		setTimeout(function() {
+			console.log(Lokasi.set('.target-5', 20, 10));
+			console.log(Lokasi.set('.target-6', 40, 30));
+		}, 4000);
+
+	</script>
+</body>
+</html>
