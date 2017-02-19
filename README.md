@@ -1,6 +1,6 @@
 # Lokasi
 
-![Sample of image preview](https://github.com/muhibbudins/lokasi/blob/master/sample.png "Sample of image preview")
+![Sample of image preview](https://github.com/muhibbudins/lokasi/blob/master/sample-preview.png "Sample of image preview")
 
 *Lokasi* is simple library to *get()* and *set()* position of element with structure "Object Pattern" and compatible with AMD or Common JS module. *Lokasi* can use without dependency like jQuery etc. and this library will be return _position_ of object / element with initialize on *class* like ```<div class="target"></div>``` and will be return parent of element too.
 
