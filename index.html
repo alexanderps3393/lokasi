@@ -64,7 +64,7 @@
 	</div>
 
 	<script type="text/javascript" src="lokasi-object.js"></script>
-	<script type="text/javascript" src="lokasi-object.min.js"></script>
+	<!-- <script type="text/javascript" src="lokasi-object.min.js"></script> -->
 	<script>
 		console.log(Lokasi.get('.target-1'));
 		console.log(Lokasi.get('.target-2'));
@@ -74,8 +74,10 @@
 		console.log(Lokasi.get('.target-6'));
 
 		setTimeout(function() {
-			console.log(Lokasi.set('.target-5', 20, 10));
-			console.log(Lokasi.set('.target-6', 40, 30));
+			Lokasi.set('.target-5', 20, 10);
+			Lokasi.set('.target-6', 40, 30, function(res) {
+				console.log(res);
+			});
 		}, 4000);
 
 	</script>
